@@ -3,62 +3,81 @@
     <head>
         <title>Jack Kill</title>
         <link rel="icon" href="./Nift_files/websitelogo1.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Nift_files/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./Nift_files/style.css">
+        <script type="text/javascript" src="./Nift_files/package/dayjs.min.js"></script>
+        <script>dayjs().format()</script>
+        <script src="./Nift_files/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+        <script src="./Nift_files/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Nift_files/style.css">
-    <link href="./Nift_files/css" rel="stylesheet">
-    <script type="text/javascript" src="./Nift_files/package/dayjs.min.js"></script>
-    <script>dayjs().format()</script>
-
     <body>
-        <style>
-            body {
-                overflow: hidden;
-            }
-        </style>
-        <h1 id="intro" class="top">JACK KILL</h1>
+        <div class="flex-container">
+            <h1 id="intro">JACK KILL</h1>
+        </div>
         <div id="main" style="opacity: 1;">
-            <h2>
-                <br>
-                Hi! I'm a student developer who's constantly improving.<br>
-                <span class="info-button" style="color:#1fa8e7;" id="aboutme">About Me<span class="underline" style="background-color:#1fa8e7;"></span></span> | 
-                <span class="info-button" style="color:#90c53f;" id="resume">Professional Info<span class="underline" style="background-color:#90c53f;"></span></span> | 
-                <span class="info-button" style="color:#d3c011;" id="projects">Projects<span class="underline" style="background-color:#d3c011;"></span></span>
-            </h2>
-            <div id="aboutme" class="info-panel">
-                <h2>About Me</h2>
-                <img id="self1" src="./Nift_files/self1.jpg" style="height:65%;"><br>
-                <h3 class="info-desc">
-                    I'm a <a id="age">20</a> year old Computer Science student at the University of Kansas.<br>
-                    My major interests are VR, Software Development, and Game Development.<br>
-                    My main languages are C++, JavaScript, and HTML.<br>
-                    I have also studied Japanese with the Center for East Asian Studies at KU.<br>
-                    二円前日本語お勉強お始めました！！
-                </h3>
-            </div >
-            <div id="resume" class="info-panel">
-                <h2>Professional Info</h2>
-                <img id="self2" src="./Nift_files/self2.JPG" style="height:65%;"><br>
-                <h3 class="info-desc">
-                    Currently, I do not have any professional experience in Computer Science, just my education and personal projects.<br>
-                    However, I'm currently searching for internship opportunities!<br>
-                    If you have any questions or need to reach me, find me at jackkillbusiness@gmail.com<br>
-                </h3>
-                <a href="./Nift_files/John Kill Resume.pdf" target="_blank" rel="noopener noreferrer">Resume Download</a><br>
+            <div class="button-container-desktop">
+                <h2>
+                    Hi! I'm a student developer who's constantly improving.<br>
+                    <span class="info-button" style="color:#1fa8e7;" id="aboutme">About Me<span class="underline" style="background-color:#1fa8e7;"></span></span> | 
+                    <span class="info-button" style="color:#90c53f;" id="resume">Professional Info<span class="underline" style="background-color:#90c53f;"></span></span> | 
+                    <span class="info-button" style="color:#d3c011;" id="projects">Projects<span class="underline" style="background-color:#d3c011;"></span></span>
+                </h2>
             </div>
-            <div id="projects" class="info-panel">
-                <h2>Project Experience</h2>
-                <div class="col-container">
-                    <div class="col">
-                        <h3 style="text-align: center;">Self-Driving RC Car</h3>
-                        <embed src="./Nift_files/selfdrivingcarproject.png" height = 480>
+            <div>
+                <h2 class="button-container-mobile">
+                    <text style="margin-bottom: 20px;"">Hi! I'm a student developer who's constantly improving.</text><br>
+                    <span class="info-button" style="color:#1fa8e7; margin: 6px 0;" id="aboutme">About Me<span class="underline" style="background-color:#1fa8e7;"></span></span>
+                    <span class="info-button" style="color:#90c53f; margin: 6px 0;" id="resume">Professional Info<span class="underline" style="background-color:#90c53f;"></span></span>
+                    <span class="info-button" style="color:#d3c011; margin: 6px 0;" id="projects">Portfolio<span class="underline" style="background-color:#d3c011;"></span></span>
+                </h2>
+            </div>
+            <div class="main-content-container">
+                <div id="aboutme" class="info-panel">
+                    <div class="flex-container-aboutme">
+                        <h2>About Me</h2>
+                        <img id="self1" src="./Nift_files/self1.jpg" class="self1">
+                        <text class="info-desc">
+                            I'm a <a id="age">20</a> year old Computer Science student at the University of Kansas.<br>
+                            My major interests are VR, Software Development, and Game Development.<br>
+                            My main languages are C++, JavaScript, and HTML.<br>
+                            I have also studied Japanese with the Center for East Asian Studies at KU.<br>
+                            二円前日本語お勉強お始めました！！
+                        </text>
                     </div>
-                    <div class="col">
-                        <h3 style="text-align: center;">Lua-Based Game Recoil Adjustment</h3>
-                        <embed src="./Nift_files/recoilscriptcodeexample.png" height = 480>
-                    </div>
+                </div >
+                <div id="resume" class="info-panel">
+                    <h2>Professional Info</h2>
+                    <img id="self2" src="./Nift_files/self2.JPG" class="self1"><br>
+                    <text class="info-desc">
+                        I have professional experience in Software Development after working as an intern at the software solutions company Propaganda3.<br>
+                        I'm currently searching for internship opportunities in game or software development!<br>
+                        If you have any questions or want to reach me, find me at jackkillbusiness@gmail.com<br>
+                    </text>
+                    <a href="./Nift_files/John Kill Resume.pdf" target="_blank" rel="noopener noreferrer">Resume Download</a><br>
                 </div>
-            </div >
+                <div id="projects" class="info-panel">
+                    <h2>Project Experience</h2>
+                    <div class="col-container">
+                        <div class="col">
+                            <h3 style="text-align: center;">Lua-Based Game Recoil Adjustment</h3>
+                            <embed class="project-image" src="./Nift_files/recoilscriptcodeexample.png">
+                        </div>
+                        <div class="col">
+                            <h3 style="text-align: center;">EduStone App</h3>
+                            <embed class="project-image" src="./Nift_files/edustone.png">
+                        </div>
+                        <div class="col">
+                            <h3 style="text-align: center;">Client Apps @ Propaganda3</h3>
+                            <embed class="project-image" src="./Nift_files/reactnative.png">
+                        </div>
+                        <div class="col">
+                            <h3 style="text-align: center;">Self-Driving RC Car</h3>
+                            <embed class="project-image" src="./Nift_files/selfdrivingcarproject.png">
+                        </div>
+                    </div>
+                </div >
+            </div>
         </div>
     </body>
     <script type="text/javascript" src="./Nift_files/intro.js"></script>
