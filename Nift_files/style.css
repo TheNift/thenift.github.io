@@ -209,4 +209,8 @@ img {
     display: block;
     width: 90%;
   }
+}
+.title-card {
+  flex: 1;
+  z-index: 9999999;
 }/*# sourceMappingURL=style.css.map */
