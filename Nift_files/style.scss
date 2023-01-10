@@ -17,17 +17,18 @@ body {
 
 h1 {
 	color: white;
-	top: 50%;
-	left: 50%;
+	top: 20px;
+	// left: 50%;
 	position: absolute;
-	transform: translateX(-50%) translateY(-50%) scale(2, 2);
+	display: flex;
+	// transform: translateX(-50%) translateY(-50%) scale(2, 2);
+	transform: scale(1.5,1.5);
 	transition: 0.5s ease-in-out;
 }
 
-h1.top {
-	top: 0;
-	transform: translateX(-50%);
-}
+// h1.top {
+// 	transform: scale(1,1);
+// }
 
 #main {
 	opacity: 0;
@@ -149,6 +150,7 @@ img {
 	display: flex;
 	justify-content: center;
     align-items: center;
+	flex: 1;
 }
 
 .flex-container-aboutme {
