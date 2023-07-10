@@ -73,6 +73,7 @@ line {
   align-items: center;
   transition: opacity 0.2s linear;
   position: absolute;
+  transform: translateX(-150%);
   opacity: 0;
   width: 90%;
 }
@@ -80,6 +81,7 @@ line {
 .info-panel.shown {
   opacity: 1;
   visibility: visible;
+  transform: translateX(0%);
 }
 
 .info-block-container {
@@ -271,6 +273,14 @@ img {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 16px;
+}
+
+.nohighlight {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+   supported by Chrome, Edge, Opera and Firefox */
 }
 
 .resumeblock {
