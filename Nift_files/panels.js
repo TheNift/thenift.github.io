@@ -6,20 +6,13 @@ for (let button of info_buttons) {
         for(let i = 0; i < info_panels.length; i++) {
             if(info_panels[i].id == button.id) {
                 if(info_panels[i].classList.contains('shown')) {
-                    info_panels[i].classList.remove('shown');
+                    // info_panels[i].classList.remove('shown');
                 } else {
                     info_panels[i].classList.add('shown');
                 }
             } else {
                 if(info_panels[i].classList.contains('shown')) {
                     info_panels[i].classList.remove('shown');
-                }
-            }
-            if(info_panels[i].id == "projects") {
-                if(info_panels[i].classList.contains('shown')) {
-                    document.body.style.overflow = "visible";
-                } else {
-                    // document.body.style.overflow = "hidden";
                 }
             }
         }
