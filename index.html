@@ -10,156 +10,166 @@
         <script>dayjs().format()</script>
         <script src="./Nift_files/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
         <script src="./Nift_files/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./Nift_files/node_modules/animejs/lib/anime.min.js"></script>
     </head>
     <body>
-        <div class="flex-container" style="margin-top: 20px;">
-            <h1 id="intro" class="title-card">JACK KILL</h1>
-        </div>
-        <div id="main" style="opacity: 1;">
-            <div class="button-container-desktop">
-                <h2>
-                    Hi! I'm a student developer who's constantly improving.<br>
-                    <span class="info-button" style="color:#1fa8e7;" id="aboutme">About Me<span class="underline" style="background-color:#1fa8e7;"></span></span> | 
-                    <span class="info-button" style="color:#90c53f;" id="resume">Professional Info<span class="underline" style="background-color:#90c53f;"></span></span> | 
-                    <span class="info-button" style="color:#d3c011;" id="projects">Projects<span class="underline" style="background-color:#d3c011;"></span></span>
-                </h2>
-            </div>
-            <div>
-                <h2 class="button-container-mobile">
-                    <text style="margin-bottom: 20px;"">Hi! I'm a student developer who's constantly improving.</text><br>
-                    <span class="info-button" style="color:#1fa8e7; margin: 6px 0;" id="aboutme">About Me<span class="underline" style="background-color:#1fa8e7;"></span></span>
-                    <span class="info-button" style="color:#90c53f; margin: 6px 0;" id="resume">Professional Info<span class="underline" style="background-color:#90c53f;"></span></span>
-                    <span class="info-button" style="color:#d3c011; margin: 6px 0;" id="projects">Portfolio<span class="underline" style="background-color:#d3c011;"></span></span>
-                </h2>
-            </div>
-            <div class="main-content-container">
-                <div id="aboutme" class="info-panel shown">
-                    <div class="info-block-container">
-                        <div class="info-block" style="text-align: center;">
-                            <text class="info-desc">
-                                I'm a <a id="age">22</a> year old Computer Science student at the University of Kansas.<br>
-                                My major interests are VR, Software Development, and Game Development.<br>
-                            </text>
-                        </div>
-                        <div class="info-block limited">
-                            <div class="info-block-skills">
-                                <div class="flex">
+        <div class="wrapper">
+            <div id="tiles"></div>
+            <div class="content">
+                <div class="flex-container" style="margin-top: 20px;">
+                    <h1 id="intro" class="title-card">JACK KILL</h1>
+                </div>
+                <div id="main" style="opacity: 1;">
+                    <div class="button-container-desktop">
+                        <h2>
+                            Hi! I'm a student developer who's constantly improving.<br>
+                            <span class="info-button" style="color:#1fa8e7;" id="aboutme">About Me<span class="underline" style="background-color:#1fa8e7;"></span></span> | 
+                            <span class="info-button" style="color:#90c53f;" id="resume">Professional Info<span class="underline" style="background-color:#90c53f;"></span></span> | 
+                            <span class="info-button" style="color:#d3c011;" id="projects">Projects<span class="underline" style="background-color:#d3c011;"></span></span>
+                        </h2>
+                    </div>
+                    <div>
+                        <h2 class="button-container-mobile">
+                            <text style="margin-bottom: 20px;"">Hi! I'm a student developer who's constantly improving.</text><br>
+                            <span class="info-button" style="color:#1fa8e7; margin: 6px 0;" id="aboutme">About Me<span class="underline" style="background-color:#1fa8e7;"></span></span>
+                            <span class="info-button" style="color:#90c53f; margin: 6px 0;" id="resume">Professional Info<span class="underline" style="background-color:#90c53f;"></span></span>
+                            <span class="info-button" style="color:#d3c011; margin: 6px 0;" id="projects">Portfolio<span class="underline" style="background-color:#d3c011;"></span></span>
+                        </h2>
+                    </div>
+                    <div class="main-content-container">
+                        <div id="aboutme" class="info-panel shown">
+                            <div class="info-block-container">
+                                <div class="info-block" style="text-align: center;">
                                     <text class="info-desc">
-                                        Confident In: <br>
-                                        <ul>
-                                            <li>C++</li>
-                                            <li>JavaScript</li>
-                                            <li>Python</li>
-                                            <li>HTML + CSS/SASS</li>
-                                        </ul>
+                                        I'm a <a id="age">22</a> year old Computer Science student at the University of Kansas.<br>
+                                        My major interests are VR, Software Development, and Game Development.<br>
                                     </text>
                                 </div>
-                                <div class="flex">
+                                <div class="info-block limited">
+                                    <div class="info-block-skills">
+                                        <div class="flex">
+                                            <text class="info-desc">
+                                                Confident In: <br>
+                                                <ul>
+                                                    <li>C++</li>
+                                                    <li>JavaScript</li>
+                                                    <li>Python</li>
+                                                    <li>HTML + CSS/SASS</li>
+                                                </ul>
+                                            </text>
+                                        </div>
+                                        <div class="flex">
+                                            <text class="info-desc">
+                                                Currently Learning: <br>
+                                                <ul>
+                                                    <li>Go</li>
+                                                    <li>UE5</li>
+                                                </ul>
+                                            </text></div>
+                                    </div>
+                                </div>
+                                <div class="info-block limited" style="text-align: center;">
                                     <text class="info-desc">
-                                        Currently Learning: <br>
-                                        <ul>
-                                            <li>Go</li>
-                                            <li>UE5</li>
+                                        I have also studied Japanese with the Center for East Asian Studies at KU.<br>
+                                        三年前日本語お勉強お始めました！！
+                                    </text>
+                                </div>
+                            </div>
+                        </div >
+                        <div id="resume" class="info-panel">
+                            <div class="resumesection">
+                                <div class="resumetitlebox">Experience</div>
+                                <div class="resumeblockcontainer">
+                                    <div class="resumeblock">
+                                        <text class="company">Propaganda3</text>
+                                        <text class="position">Software Engineering Intern</text>
+                                        <ul class="details">
+                                            <li>Collaborated with a team of developers to create apps, websites, and scripts using a variety of tools, languages, and libraries</li>
+                                            <li>Actively experienced the process of Software as a Service and Agile Software Development / Production in a team-based environment</li>
+                                            <li>Tools and libraries used include JavaScript, TypeScript, React-Native, Expo, Python, Selenium, PHP, AWS, and Propaganda3’s WPO library</li>
                                         </ul>
-                                    </text></div>
+                                    </div>
+                                    <div class="resumeblock">
+                                        <text class="company">New York Presbytarian Hospital</text>
+                                        <text class="position">Information Technology Intern</text>
+                                        <ul class="details">
+                                            <li>Corresponded with a team of interns to assist the existing IT team at NYP</li>
+                                            <li>Trained in the use of NYP's deployed software systems</li>
+                                            <li>Coordinated to complete tasks as needed by hospital staff</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="resumesection">
+                                <div class="resumetitlebox">Relevant Coursework</div>
+                                <div class="resumeblockcontainer nohighlight">
+                                    <div class="resumeblock">
+                                        <text class="company">Inro to Machine Learning</text>
+                                        <text class="position">Spring 2024</text>
+                                    </div>
+                                    <div class="resumeblock">
+                                        <text class="company">Operating Systems</text>
+                                        <text class="position">Spring 2024</text>
+                                    </div>
+                                    <div class="resumeblock">
+                                        <text class="company">Compiler Construction</text>
+                                        <text class="position">Fall 2023</text>
+                                    </div>
+                                    <div class="resumeblock">
+                                        <text class="company">Algorithms</text>
+                                        <text class="position">Spring 2023</text>
+                                    </div>
+                                    <div class="resumeblock">
+                                        <text class="company">Data Structures</text>
+                                        <text class="position">Fall 2022</text>
+                                    </div>
+                                    <div class="resumeblock">
+                                        <text class="company">Intro to Theory of Computing</text>
+                                        <text class="position">Fall 2022</text>
+                                    </div>
+                                    <div class="resumeblock">
+                                        <text class="company">Embedded Systems</text>
+                                        <text class="position">Fall 2021</text>
+                                    </div>
+                                    <div class="resumeblock">
+                                        <text class="company">Calculus III</text>
+                                        <text class="position">Spring 2021</text>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="./Nift_files/John Kill Resume.pdf" target="_blank" rel="noopener noreferrer">Resume Download</a><br>
                         </div>
-                        <div class="info-block limited" style="text-align: center;">
-                            <text class="info-desc">
-                                I have also studied Japanese with the Center for East Asian Studies at KU.<br>
-                                三年前日本語お勉強お始めました！！
-                            </text>
-                        </div>
+                        <div id="projects" class="info-panel">
+                            <div class="col-container nohighlight">
+                                <div class="col">
+                                    <h3 style="text-align: center;">Lua-Based Game Recoil Adjustment</h3>
+                                    <embed class="project-image" src="./Nift_files/images/recoilscriptcodeexample.png">
+                                </div>
+                                <div class="col">
+                                    <h3 style="text-align: center;">EduStone App</h3>
+                                    <embed class="project-image" src="./Nift_files/images/edustone.png">
+                                </div>
+                                <div class="col">
+                                    <h3 style="text-align: center;">Client Apps @ Propaganda3</h3>
+                                    <embed class="project-image" src="./Nift_files/images/reactnative.png">
+                                </div>
+                                <div class="col">
+                                    <h3 style="text-align: center;">Self-Driving RC Car</h3>
+                                    <embed class="project-image" src="./Nift_files/images/selfdrivingcarproject.png">
+                                </div>
+                                <div class="col">
+                                    <h3 style="text-align: center;">Self-Driving RC Car</h3>
+                                    <embed class="project-image" src="./Nift_files/images/selfdrivingcarproject.png">
+                                </div>
+                            </div>
+                        </div >
                     </div>
-                </div >
-                <div id="resume" class="info-panel">
-                    <div class="resumesection">
-                        <div class="resumetitlebox">Experience</div>
-                        <div class="resumeblockcontainer">
-                            <div class="resumeblock">
-                                <text class="company">Propaganda3</text>
-                                <text class="position">Software Engineering Intern</text>
-                                <ul class="details">
-                                    <li>Collaborated with a team of developers to create apps, websites, and scripts using a variety of tools, languages, and libraries</li>
-                                    <li>Actively experienced the process of Software as a Service and Agile Software Development / Production in a team-based environment</li>
-                                    <li>Tools and libraries used include JavaScript, TypeScript, React-Native, Expo, Python, Selenium, PHP, AWS, and Propaganda3’s WPO library</li>
-                                </ul>
-                            </div>
-                            <div class="resumeblock">
-                                <text class="company">New York Presbytarian Hospital</text>
-                                <text class="position">Information Technology Intern</text>
-                                <ul class="details">
-                                    <li>Corresponded with a team of interns to assist the existing IT team at NYP</li>
-                                    <li>Trained in the use of NYP's deployed software systems</li>
-                                    <li>Coordinated to complete tasks as needed by hospital staff</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resumesection">
-                        <div class="resumetitlebox">Relevant Coursework</div>
-                        <div class="resumeblockcontainer nohighlight">
-                            <div class="resumeblock">
-                                <text class="company">Inro to Machine Learning</text>
-                                <text class="position">Spring 2024</text>
-                            </div>
-                            <div class="resumeblock">
-                                <text class="company">Operating Systems</text>
-                                <text class="position">Spring 2024</text>
-                            </div>
-                            <div class="resumeblock">
-                                <text class="company">Compiler Construction</text>
-                                <text class="position">Fall 2023</text>
-                            </div>
-                            <div class="resumeblock">
-                                <text class="company">Algorithms</text>
-                                <text class="position">Spring 2023</text>
-                            </div>
-                            <div class="resumeblock">
-                                <text class="company">Data Structures</text>
-                                <text class="position">Fall 2022</text>
-                            </div>
-                            <div class="resumeblock">
-                                <text class="company">Intro to Theory of Computing</text>
-                                <text class="position">Fall 2022</text>
-                            </div>
-                            <div class="resumeblock">
-                                <text class="company">Embedded Systems</text>
-                                <text class="position">Fall 2021</text>
-                            </div>
-                            <div class="resumeblock">
-                                <text class="company">Calculus III</text>
-                                <text class="position">Spring 2021</text>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="./Nift_files/John Kill Resume.pdf" target="_blank" rel="noopener noreferrer">Resume Download</a><br>
                 </div>
-                <div id="projects" class="info-panel">
-                    <h2>Project Experience</h2>
-                    <div class="col-container">
-                        <div class="col">
-                            <h3 style="text-align: center;">Lua-Based Game Recoil Adjustment</h3>
-                            <embed class="project-image" src="./Nift_files/images/recoilscriptcodeexample.png">
-                        </div>
-                        <div class="col">
-                            <h3 style="text-align: center;">EduStone App</h3>
-                            <embed class="project-image" src="./Nift_files/images/edustone.png">
-                        </div>
-                        <div class="col">
-                            <h3 style="text-align: center;">Client Apps @ Propaganda3</h3>
-                            <embed class="project-image" src="./Nift_files/images/reactnative.png">
-                        </div>
-                        <div class="col">
-                            <h3 style="text-align: center;">Self-Driving RC Car</h3>
-                            <embed class="project-image" src="./Nift_files/images/selfdrivingcarproject.png">
-                        </div>
-                    </div>
-                </div >
             </div>
         </div>
     </body>
     <script type="text/javascript" src="./Nift_files/intro.js"></script>
+    <script type="text/javascript" src="./Nift_files/tiles.js"></script>
     <script type="text/javascript" src="./Nift_files/panels.js"></script>
     <script type="text/javascript" src="./Nift_files/age.js"></script>
 </html>
