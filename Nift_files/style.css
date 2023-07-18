@@ -378,4 +378,13 @@ body.toggled > #tiles > .tile:hover {
 
 .link:hover {
   background-color: #1d1d1d;
+}
+
+.linkbox {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
 }/*# sourceMappingURL=style.css.map */

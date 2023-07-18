@@ -417,3 +417,12 @@ body.toggled > #tiles > .tile:hover {
 .link:hover {
 	background-color: $darker;
 }
+
+.linkbox {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none !important;
+}
