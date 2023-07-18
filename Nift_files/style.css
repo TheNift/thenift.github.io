@@ -36,6 +36,7 @@ h2 {
 
 .info-button {
   display: inline-block;
+  color: #454138;
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
