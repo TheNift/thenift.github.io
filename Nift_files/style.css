@@ -170,11 +170,10 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #1d1d1d;
+  border: 3px solid #454138;
   margin: 0px 8px 8px 16px;
   border-radius: 25px;
   padding: 4px 16px;
-  border: 1px solid red;
 }
 .col-container .col .project-image {
   width: 256px;
@@ -196,6 +195,7 @@ img {
   display: flex;
   justify-content: center;
   margin: 20px 0px;
+  pointer-events: none;
   display: flex;
 }
 @media (max-width: 575.98px) {
@@ -285,6 +285,10 @@ img {
    supported by Chrome, Edge, Opera and Firefox */
 }
 
+.clickable {
+  pointer-events: auto !important;
+}
+
 .resumeblock {
   display: flex;
   flex-direction: column;
@@ -363,4 +367,14 @@ body.toggled > #tiles > .tile:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+
+.link {
+  pointer-events: all;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: #1d1d1d;
 }/*# sourceMappingURL=style.css.map */

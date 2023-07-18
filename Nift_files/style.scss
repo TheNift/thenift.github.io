@@ -196,11 +196,11 @@ img {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background: $darker;
+		// background: $darker;
+		border: 3px solid $yorha-text;
 		margin: 0px 8px 8px 16px;
 		border-radius: 25px;
 		padding: 4px 16px;
-		border: 1px solid red;
         .project-image {
             width:256px;
         }
@@ -223,6 +223,7 @@ img {
 	display: flex;
 	justify-content: center;
     margin: 20px 0px;
+	pointer-events: none;
 	@include media-breakpoint-down(sm) {
         display: none;
     }
@@ -314,6 +315,10 @@ img {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+.clickable {
+	pointer-events: auto !important;
+}
+
 .resumeblock {
 	display: flex;
 	flex-direction: column;
@@ -400,4 +405,14 @@ body.toggled > #tiles > .tile:hover {
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
+}
+
+.link {
+	pointer-events: all;
+	transition: 0.2s;
+	text-decoration: none;
+}
+
+.link:hover {
+	background-color: $darker;
 }

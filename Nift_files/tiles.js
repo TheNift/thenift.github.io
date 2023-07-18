@@ -31,7 +31,7 @@ const createTile = index => {
   tile.style.opacity = toggled ? 0 : 1;
   
   tile.onclick = () => {
-    setTimeout(handleOnClick, 300, index);
+    setTimeout(handleOnClick, 400, index);
     handleOnClick(index);
   };
   return tile;
