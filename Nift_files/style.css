@@ -72,6 +72,7 @@ line {
   transform: translateX(-150%);
   opacity: 0;
   width: 90%;
+  pointer-events: none;
 }
 
 .info-panel.shown {
@@ -265,7 +266,7 @@ img {
   border-bottom: 3px solid currentColor;
   line-height: 0.85;
   border-radius: 0px;
-  text-shadow: 2px 2px #bab5a1, 2px -2px #bab5a1, -2px 2px #bab5a1, -2px -2px #bab5a1;
+  text-shadow: 2px 2px #d1cdb7, 2px -2px #d1cdb7, -2px 2px #d1cdb7, -2px -2px #d1cdb7;
 }
 
 .resumeblockcontainer {
@@ -362,8 +363,4 @@ body.toggled > #tiles > .tile:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-
-.tilewrapper {
-  height: 200vh;
 }/*# sourceMappingURL=style.css.map */
