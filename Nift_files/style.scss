@@ -18,6 +18,7 @@ body {
     // @include media-breakpoint-down(sm) {
     //     overflow:visible;
     // }
+	height: 100vh;
 }
 
 body::-webkit-scrollbar{
@@ -348,9 +349,9 @@ img {
 }
 
 #tiles {
-	height: calc(100vh - 1px);
+	height: calc(200vh - 1px);
 	width: calc(100vw - 1px);
-	position: relative;
+	// position: relative;
 	z-index: 2;
 
 	display: grid;
@@ -400,6 +401,6 @@ body.toggled > #tiles > .tile:hover {
 	justify-content: flex-start;
 }
 
-.wrapper {
-	// position: relative;
+.tilewrapper {
+	height: 200vh;
 }

@@ -5,6 +5,7 @@
 body {
   margin: 0;
   background: #bab5a1;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -318,9 +319,8 @@ img {
 }
 
 #tiles {
-  height: calc(100vh - 1px);
+  height: calc(200vh - 1px);
   width: calc(100vw - 1px);
-  position: relative;
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
@@ -362,4 +362,8 @@ body.toggled > #tiles > .tile:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+
+.tilewrapper {
+  height: 200vh;
 }/*# sourceMappingURL=style.css.map */
