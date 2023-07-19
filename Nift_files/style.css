@@ -103,6 +103,7 @@ line {
 
 .info-block-skills {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
@@ -156,7 +157,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
-  border: 1px solid pink;
   flex-direction: row;
   justify-content: space-around;
 }
