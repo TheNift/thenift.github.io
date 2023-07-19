@@ -180,7 +180,6 @@ img {
 	display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-	border: 1px solid pink;
 	// width: 90%;
     @include media-breakpoint-down(lg) {
         flex-direction: column;
