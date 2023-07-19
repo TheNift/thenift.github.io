@@ -38,10 +38,9 @@ h2 {
   display: inline-block;
   color: #454138;
   cursor: pointer;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none; /* Non-prefixed version, currently
    supported by Chrome, Edge, Opera and Firefox */
 }
 
