@@ -87,13 +87,17 @@ line {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+@media (min-width: 1400px) {
+  .info-block-container {
+    max-width: 80%;
+  }
+}
 
 .info-block {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 60%;
-  flex-grow: 1;
   margin-bottom: 16px;
   border: 3px solid #454138;
   border-radius: 25px;
@@ -298,6 +302,12 @@ img {
   margin: 0px 8px 8px 16px;
   border-radius: 25px;
   padding: 4px 16px;
+  max-width: 80%;
+}
+@media (max-width: 575.98px) {
+  .resumeblock {
+    max-width: 100%;
+  }
 }
 
 .company {
@@ -321,6 +331,11 @@ img {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.aggressive-width {
+  min-width: 51%;
+  flex: 1;
 }
 
 #tiles {

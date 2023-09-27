@@ -109,6 +109,12 @@ line {
 	justify-content: space-around;
 	// align-items: center;
 	flex-wrap: wrap;
+	@include media-breakpoint-only(xxl) {
+        max-width: 80%;
+    }
+    // @include media-breakpoint-down(sm md lg) {
+    //     max-width: none;
+    // }
 }
 
 .info-block {
@@ -117,7 +123,7 @@ line {
 	justify-content: center;
 	align-items: center;
 	max-width: 60%;
-	flex-grow: 1;
+	// flex-grow: 1;
 	margin-bottom: 16px;
 	// background: $darker;
 	border: 3px solid $yorha-text;
@@ -330,6 +336,13 @@ img {
 	margin: 0px 8px 8px 16px;
 	border-radius: 25px;
 	padding: 4px 16px;
+	@include media-breakpoint-down(sm) {
+        max-width: 100%;
+    }
+	@include media-breakpoint-up(md xl xxl) {
+        max-width: 80%;
+
+    }
 }
 
 .company {
@@ -353,6 +366,13 @@ img {
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.aggressive-width {
+	min-width: 51%;
+	@include media-breakpoint-up(md xl) {
+        flex: 1;
+    }
 }
 
 #tiles {
