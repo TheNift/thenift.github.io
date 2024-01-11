@@ -150,8 +150,23 @@ line {
     }
 }
 
+.wide {
+	// min-width: 60%;
+	@include media-breakpoint-up(lg) {
+		width: 50%;
+		margin: 0% 20%;
+		margin-bottom: 16px;
+	}
+}
+
 .limited {
-	max-width: 45%;
+	@include media-breakpoint-up(lg) {
+		width: 45%;
+	}
+	@include media-breakpoint-down(sm md) {
+		margin: none;
+		width: 60%;
+	} 
 }
 
 .flex {
@@ -284,6 +299,10 @@ img {
 	flex-direction: column;
 	align-items: center;
 	margin-top: 30px;
+	max-width: 80%;
+	@include media-breakpoint-up(lg) {
+		max-width: 50%;
+	}
 }
 
 .resumetitlebox {
@@ -336,14 +355,27 @@ img {
 	margin: 0px 8px 8px 16px;
 	border-radius: 25px;
 	padding: 4px 16px;
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(sm md) {
         max-width: 100%;
     }
-	@include media-breakpoint-up(md xl xxl) {
+	@include media-breakpoint-up(lg xl xxl) {
         max-width: 80%;
 
     }
 }
+
+.course {
+	@include media-breakpoint-up(lg) {
+		width: 20%;
+		margin-left: 8px;
+		margin-right: 8px;
+		margin-bottom: 8px;
+
+	// @include media-breakpoint-down(sm md) {
+	// 	width: 100%;
+	// }
+}
+	}
 
 .company {
 	font-size: 24px;
