@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.71553d64.css",
+    "main.js": "/static/js/main.3c381f40.js",
+    "static/media/EduStone.png": "/static/media/EduStone.3ec6e39509c19f188bd3.png",
+    "static/media/react.png": "/static/media/react.6bcffb56bd0efaa47767.png",
+    "static/media/recoilscriptcodeexample.jpg": "/static/media/recoilscriptcodeexample.05803040f00ce851640a.jpg",
+    "static/media/slippi.png": "/static/media/slippi.4d7cdb12660576f1066b.png",
+    "static/media/firebase.png": "/static/media/firebase.6da715a04d43fcc59676.png",
+    "index.html": "/index.html",
+    "main.71553d64.css.map": "/static/css/main.71553d64.css.map",
+    "main.3c381f40.js.map": "/static/js/main.3c381f40.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71553d64.css",
+    "static/js/main.3c381f40.js"
+  ]
+}
