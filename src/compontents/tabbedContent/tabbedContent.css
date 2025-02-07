@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+.doto-text {
+    font-family: "Doto", serif;
+    font-size: 40px;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-variation-settings:
+      "ROND" 100;
+}
+
+.active_tab {
+    background-color: #454138 !important;
+    color: #dcd8c0 !important;
+    -webkit-box-shadow: 0.2em 0.2em 0.1em 0 #bab5a1;
+    box-shadow: 0.2em 0.2em 0.1em 0 #bab5a1;
+}
+.active_tab:before {
+    top: -0.2rem !important;
+    bottom: -0.2rem !important;
+    border: solid #454138;
+    border-width: 0.1rem 0;
+    padding: 0.5rem;
+}
+.active_tab:after {
+    width: 100%;
+}
+
+.buttonPanel {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.tabbedContent_wrapper {
+    width: 50%;
+}
+
+.about_me_tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.columns ul,
+.company_block ul {
+    list-style-type: "> ";
+}
+
+.columns li::marker,
+.company_block li::marker {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.about_me_tab h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.company_block {
+    margin-bottom: 40px;
+}
+
+.company_block .company_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* background: #454138;
+    color: #d1cdb7; */
+    border-bottom: 2px solid #454138;
+    padding: 6px;
+}
+.company_block .company_header p {
+    text-wrap: nowrap;
+    font-size: 18px;
+}
+
+.company_block p, h3, h4 {
+    margin: 0;
+}
+
+.company_block .position_location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 8px 0;
+}
+
+.company_block .position_location h4 {
+    font-weight: 700;
+    padding-left: 8px;
+    font-size: 20px;
+}
+
+.company_block .position_location p {
+    font-size: 18px;
+}
+
+.company_block .content {
+    padding-left: 0.5rem;
+}
+
+@media screen and (max-width: 1250px) {
+    .tabbedContent_wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        text-align: center;
+    }
+    
+    .tabbedContent_wrapper {
+        width: 90%;
+    }
+    
+    .columns {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .column {
+        width: 100%;
+    }
+}

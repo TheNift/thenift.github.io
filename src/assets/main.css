@@ -1,0 +1,100 @@
+.body {
+    /* position: relative; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    align-items: center;
+}
+
+#main {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.title-card {
+	display: flex;
+	flex: 1;
+	z-index: 100;
+    font-size: 36px !important;
+    transform: translateY(50vh) scale(2,2);
+    position: absolute;
+    transition: 0.5s ease-out;
+}
+
+h1.top {
+    transform: scale(1,1);
+    position: relative;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.subheading {
+    margin-bottom: 24px;
+}
+
+.yorha-matrix {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    /* transition: opacity 0.3s ease-in-out; */
+}
+
+.yorha-matrix-visible {
+    opacity: 1 !important;
+}
+
+.yorha-matrix-show {
+    opacity: 1 !important;
+    animation: diagonal-show 0.4s forwards;
+  }
+  
+.yorha-matrix-hide {
+    opacity: 1 !important;
+    animation: diagonal-hide 0.4s forwards;
+}
+
+@media screen and (max-width: 480px) {
+    .subheading {
+        display: none;
+    }
+
+    h1.top {
+        margin-bottom: 28px;
+    }
+}
+
+@keyframes diagonal-show {
+    0% {
+      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+  
+@keyframes diagonal-hide {
+    0% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    100% {
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+}

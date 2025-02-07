@@ -1,0 +1,68 @@
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    background-color: transparent;
+    border: 2px solid #454138;
+    border-radius: 15px;
+    padding: 20px 0;
+  }
+  
+  .carousel-slide-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-button {
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 2px solid #d1cdb7;
+    color: #d1cdb7;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .carousel-button p {
+    margin: 0 !important;
+  }
+  
+  .carousel-button.left {
+    left: 10px;
+  }
+  .carousel-button.right {
+    right: 10px;
+  }
+
+  .project-portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+  

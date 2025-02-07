@@ -1,0 +1,104 @@
+.pattern {
+    border-top: 2px solid #4D493E;
+    height: 20px;
+  }
+  
+.pattern-inner {
+    height: 40px;
+    background-size: 50px 3px, 50px 1px, 50px 1px, 50px 1px, 50px 1px, 50px 1px, 50px 1px, 50px 1px, 50px 1px;
+    background-position: 0 0, 22px 4px, 22px 5px, 22px 6px, 22px 7px, 28px 12px, 28px 13px, 28px 14px, 28px 15px;
+    background-image: linear-gradient(90deg, #4d493e, #4d493e 10px, transparent 10px), linear-gradient(90deg, rgba(77, 73, 62, .4), rgba(77, 73, 62, .4) 1px, rgba(77, 73, 62, .8) 1px, rgba(77, 73, 62, .8) 2px, rgba(77, 73, 62, .9) 2px, rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .4) 3px, rgba(77, 73, 62, .4) 4px, transparent 4px, transparent 12px, rgba(77, 73, 62, .4) 12px, rgba(77, 73, 62, .4) 13px, rgba(77, 73, 62, .8) 13px, rgba(77, 73, 62, .8) 14px, rgba(77, 73, 62, .9) 14px, rgba(77, 73, 62, .9) 15px, rgba(77, 73, 62, .4) 15px, rgba(77, 73, 62, .4) 16px, transparent 16px), linear-gradient(90deg, rgba(77, 73, 62, .9), rgba(77, 73, 62, .9) 1px, rgba(77, 73, 62, 1) 1px, rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 3px, rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .9) 4px, transparent 4px, transparent 12px, rgba(77, 73, 62, .9) 12px, rgba(77, 73, 62, .9) 13px, rgba(77, 73, 62, 1) 13px, rgba(77, 73, 62, 1) 14px, rgba(77, 73, 62, 1) 14px, rgba(77, 73, 62, 1) 15px, rgba(77, 73, 62, .9) 15px, rgba(77, 73, 62, .9) 16px, transparent 16px), linear-gradient(90deg, rgba(77, 73, 62, .9), rgba(77, 73, 62, .9) 1px, rgba(77, 73, 62, 1) 1px, rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 3px, rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .9) 4px, transparent 4px, transparent 12px, rgba(77, 73, 62, .9) 12px, rgba(77, 73, 62, .9) 13px, rgba(77, 73, 62, 1) 13px, rgba(77, 73, 62, 1) 14px, rgba(77, 73, 62, 1) 14px, rgba(77, 73, 62, 1) 15px, rgba(77, 73, 62, .9) 15px, rgba(77, 73, 62, .9) 16px, transparent 16px), linear-gradient(90deg, rgba(77, 73, 62, .4), rgba(77, 73, 62, .4) 1px, rgba(77, 73, 62, .8) 1px, rgba(77, 73, 62, .8) 2px, rgba(77, 73, 62, .9) 2px, rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .4) 3px, rgba(77, 73, 62, .4) 4px, transparent 4px, transparent 12px, rgba(77, 73, 62, .4) 12px, rgba(77, 73, 62, .4) 13px, rgba(77, 73, 62, .8) 13px, rgba(77, 73, 62, .8) 14px, rgba(77, 73, 62, .9) 14px, rgba(77, 73, 62, .9) 15px, rgba(77, 73, 62, .4) 15px, rgba(77, 73, 62, .4) 16px, transparent 16px), linear-gradient(90deg, rgba(77, 73, 62, .4), rgba(77, 73, 62, .4) 1px, rgba(77, 73, 62, .8) 1px, rgba(77, 73, 62, .8) 2px, rgba(77, 73, 62, .9) 2px, rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .4) 3px, rgba(77, 73, 62, .4) 4px, transparent 4px), linear-gradient(90deg, rgba(77, 73, 62, .9), rgba(77, 73, 62, .9) 1px, rgba(77, 73, 62, 1) 1px, rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 3px, rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .9) 4px, transparent 4px), linear-gradient(90deg, rgba(77, 73, 62, .9), rgba(77, 73, 62, .9) 1px, rgba(77, 73, 62, 1) 1px, rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 3px, rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .9) 4px, transparent 4px), linear-gradient(90deg, rgba(77, 73, 62, .4), rgba(77, 73, 62, .4) 1px, rgba(77, 73, 62, .8) 1px, rgba(77, 73, 62, .8) 2px, rgba(77, 73, 62, .9) 2px, rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .4) 3px, rgba(77, 73, 62, .4) 4px, transparent 4px);
+    background-repeat: repeat-x;
+}
+
+.pattern_wrapper {
+    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.pattern_bottom {
+    transform: rotate(180deg);
+    overflow: hidden;
+    bottom: 0;
+}
+
+.pattern_inner_wrapper,
+.pattern_inner_wrapper_secondary,
+.pattern_inner_wrapper_initial {
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.pattern_inner_wrapper {
+    animation: scroll-horizontal 90s linear infinite;
+}
+
+.pattern_inner_wrapper_secondary {
+    animation: scroll-horizontal 90s linear infinite;
+    animation-delay: 45s;
+}
+
+.pattern_inner_wrapper_initial {
+    animation: scroll-horizontal-initializer 45s linear 1;
+}
+
+.pattern_bottom .pattern_inner_wrapper {
+    animation: scroll-horizontal-backwards 90s linear infinite;
+}
+
+.pattern_bottom .pattern_inner_wrapper_secondary {
+    animation: scroll-horizontal-backwards 90s linear infinite;
+    animation-delay: 45s;
+}
+
+.pattern_bottom .pattern_inner_wrapper_initial {
+    animation: scroll-horizontal-initializer-backwards 45s linear 1;
+}
+
+@keyframes scroll-horizontal {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes scroll-horizontal-initializer {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -100%;
+        display: none;
+    }
+}
+@keyframes scroll-horizontal-backwards {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes scroll-horizontal-initializer-backwards {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 100%;
+        display: none;
+    }
+}
